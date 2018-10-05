@@ -1,0 +1,68 @@
+body{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: minmax(65px,auto);  
+    margin:auto;                            
+}
+.fab{
+    color:aqua;
+}
+.brand{
+    margin:0px;
+    padding:0px;
+    grid-column: 1/2;
+}
+.brand>li{
+    display:inline-block;
+}
+.brand>li>i{
+    margin-left:5px;
+    padding-right:5px;
+    font-size: 22px;
+}
+.brand>li>h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.links{
+    margin:0px;
+    padding:0px;
+    grid-column: 10/13;
+    text-align: end;
+}
+.links>li{
+    display:inline-block;
+    color: #2e3333;
+    font-size: 25px;
+    padding: 10px;
+}
+.animated {
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+}
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+  }
+  .top{
+    background-color:white;
+    border:1px solid grey;
+    box-shadow:1px 1px grey;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column: 1/13;
+  }
+  .topFixed{
+    position: fixed;
+    width:100%;
+    z-index: 10;
+
+}
+  
+  
